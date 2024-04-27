@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mealjung
+  profiles:
+    active: local
+    include:
+      - core
+
+mvc:
+  path-match:
+    matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8

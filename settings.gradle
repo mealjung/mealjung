@@ -1,0 +1,3 @@
+rootProject.name = 'mealjung-api'
+include 'rest-service'
+include 'domain-core'
