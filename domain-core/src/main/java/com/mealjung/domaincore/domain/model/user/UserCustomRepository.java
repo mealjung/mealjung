@@ -1,4 +1,4 @@
-package com.mealjung.domaincore.infrastructure.user;
+package com.mealjung.domaincore.domain.model.user;
 
 import com.mealjung.domaincore.domain.model.user.UserEntity;
 

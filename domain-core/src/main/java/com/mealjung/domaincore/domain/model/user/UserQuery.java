@@ -1,7 +1,5 @@
 package com.mealjung.domaincore.domain.model.user;
 
-import com.mealjung.domaincore.infrastructure.user.UserCustomRepository;
-
 import java.util.List;
 
 public class UserQuery {

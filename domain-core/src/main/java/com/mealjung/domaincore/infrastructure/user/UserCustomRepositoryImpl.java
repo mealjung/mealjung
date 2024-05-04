@@ -1,5 +1,6 @@
 package com.mealjung.domaincore.infrastructure.user;
 
+import com.mealjung.domaincore.domain.model.user.UserCustomRepository;
 import com.mealjung.domaincore.domain.model.user.UserEntity;
 import com.mealjung.domaincore.infrastructure.config.QuerydslRepositorySupport;
 import com.querydsl.core.types.dsl.BooleanExpression;

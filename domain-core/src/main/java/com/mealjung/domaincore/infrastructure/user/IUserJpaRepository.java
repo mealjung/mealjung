@@ -5,8 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface IUserJpaRepository extends JpaRepository<UserEntity, Long>, UserCustomRepository {
+public interface IUserJpaRepository extends JpaRepository<UserEntity, Long> {
     UserEntity findByName(String username);
-
-    List<UserEntity> findAllByAgeRange(int startAgeRange, int endAgeRange);
 }
