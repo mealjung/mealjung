@@ -5,10 +5,7 @@ import com.mealjung.restservice.model.UserModel;
 import com.mealjung.restservice.service.UserApplicationProvider;
 import com.mealjung.restservice.service.UserApplicationService;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,7 +29,7 @@ public class UserController {
     }
 
     @GetMapping
-    public List<UserModel> findAllUsersByAgeRange(UserSearchCondition condition) {
+    public List<UserModel> findAllUsersByAgeRange(@ModelAttribute UserSearchCondition condition) {
         return userApplicationProvider.findAllByAgeRange(condition.startAgeRange, condition.endAgeRange);
     }
 }
