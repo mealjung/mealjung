@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication(scanBasePackages = {"../mealjung-api/domain-core"})
+@ConfigurationPropertiesScan
+@SpringBootApplication(scanBasePackages = {"../mealjung-api/*"})
 public class RestServiceApplication {
 
 	public static void main(String[] args) {
@@ -13,3 +14,5 @@ public class RestServiceApplication {
 	}
 
 }
+
+
