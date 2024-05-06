@@ -4,8 +4,6 @@ import com.mealjung.domaincore.domain.model.user.UserEntity;
 import com.mealjung.domaincore.domain.model.user.UserRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
 public class UserJpaRepository implements UserRepository {
     private final IUserJpaRepository userRepository;

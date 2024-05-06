@@ -6,11 +6,13 @@ import com.mealjung.domaincore.infrastructure.config.QuerydslRepositorySupport;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 import static com.mealjung.domaincore.domain.model.user.QUserEntity.userEntity;
 
+@Repository
 public class UserCustomRepositoryImpl extends QuerydslRepositorySupport implements UserCustomRepository {
     private final JPAQueryFactory queryFactory;
 
