@@ -15,6 +15,6 @@ public class UserModel {
     }
 
     public static UserModel from(UserEntity user) {
-        return new UserModel(user.getName(), user.getAge(), user.getGender());
+        return new UserModel(user.getEmail(), user.getAge(), user.getGender());
     }
 }
